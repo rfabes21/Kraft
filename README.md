@@ -1,0 +1,4 @@
+Kraft
+=====
+
+Kraft test page
