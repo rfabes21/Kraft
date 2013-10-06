@@ -1,0 +1,39 @@
+//
+// Variables
+// -----------------------------------------------------
+ 
+// Globals
+$baseUrl: env_or_default("STATIC_URL", "/static/");
+ 
+// Colors
+$white:                 #fff !default;
+$black:                 #000 !default;
+$purple:                #78297a !default;
+$darkPurple:            #69206b !default;
+$darkerPurple:          #5e2060 !default;
+$lightPurple:           #9d3ea1 !default;
+$red:                   #ea1f33 !default;
+$gray:                  #dedede !default; 
+ 
+// Scaffolding
+$bodyBackground:        $white !default;
+$textColor:             $black !default;
+ 
+// Links
+$linkColor:             $purple !default;
+$linkColorHover:        $lightPurple !default;
+ 
+// Fonts
+$NeutraBook:            "Neutraface-Book", sans-serif;
+$NeutraBold:            "Neutraface-Bold", sans-serif;
+$NeutraBoldItalic:      "Neutraface-BoldItalic", sans-serif;
+$sansSerif:             "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 
+// Typography
+$baseFontSize:          16px !default;
+$baseFontFamily:        $NeutraBook !default;
+$baseLineHeight:        20px !default;
+ 
+$headingsFontFamily:    $NeutraBoldItalic !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    normal !default;    // instead of browser default, bold
+$headingsColor:         $purple !default; // empty to use BS default, $textColor

@@ -1,0 +1,86 @@
+//
+// Header
+// -----------------------------------------------------
+ 
+/*
+ * Bigger font for mobile devices
+ */
+body.mobile .header nav a {
+    font-size: 26px;
+}
+ 
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 95%;
+    height: 54px;
+    padding: 8px 2.5%;
+    background: $purple;
+    box-shadow: 0 4px 0 0 rgba(0,0,0,0.2);
+    z-index: 10000;
+    .no-touch & {
+        position: fixed;
+    }
+    h1,
+    li,
+    nav a {
+        float: left;
+    }
+    h1 {
+        width: 314px;
+        margin: 10px 4% 0 0;
+        a {
+            @extend .icons-logo;
+            font-size: 1px;
+            text-indent: -999em;
+            display: block;
+        }
+    }
+    nav {
+        margin: 12px 0 0;
+        a {
+            padding: 5px 1.85%;
+            margin: 0 2px;
+            text-transform: lowercase;
+            font-size: 18px;
+            font-family: $NeutraBoldItalic;
+            color: $white;
+            .no-touch &:hover,
+            &.active {
+                background: $lightPurple;
+                color: $white;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+            &:active {
+                background: darken($lightPurple,2%) !important;
+            }
+        }
+    }
+    .social-icons {
+        position: absolute;
+        top: 16px;
+        right: 0;
+        width: 300px;
+        &:before {
+            @extend .icons-txt-share;
+            content: "";
+            float: left;
+            margin: 12px 5% 0 0;
+            display: inline-block;
+        }
+        li {
+            margin: 0 0 0 10px;
+        }
+        a {
+            text-indent: -999em;
+            display: block;
+        }
+        .fb { @extend .icons-icon-fb; @include transition(none);}
+        .tw { @extend .icons-icon-tw; @include transition(none);}
+        .pt { @extend .icons-icon-pt; @include transition(none);}
+        .em { @extend .icons-icon-em; @include transition(none);}
+    }
+}
